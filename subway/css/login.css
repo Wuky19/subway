@@ -204,7 +204,7 @@ fieldset {
 }
 
 .footer_logo img {
-    width: 7.2rem;
+    width: 9rem;
     height: auto;
 }
 
@@ -220,19 +220,14 @@ fieldset {
 }
 
 .footer_nav li + li {
-    margin-left: 2rem;
-    padding-left: 2rem;
+    margin-left: 1.2rem;
 }
 
 .footer_nav li + li::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 1px;
-    height: 1.2rem;
-    background-color: #E5E7EB;
-    transform: translateY(-50%);
+    content: "|";
+    position: static;
+    margin-right: 1.2rem;
+    color: #D9DDE3;
 }
 
 .footer_nav a {
