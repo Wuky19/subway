@@ -127,6 +127,10 @@ fieldset {
     margin-top: 1.8rem;
 }
 
+.required {
+    color: var(--primary);
+}
+
 .input_group label {
     display: block;
     margin-bottom: .8rem;
