@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE SCV 회원가입</title>
+    <link rel="stylesheet" href="../coolfile/font/css/pretendard.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+    <div id="wrap">
+        <header class="header">
+            <h1>
+                <a href="../" class="logo">
+                    <img src="../coolfile/img/image 2.svg" alt="THE SCV">
+                </a>
+            </h1>
+            <button type="button" class="menu_btn">
+                <span class="sr-only">메뉴 열기</span>
+            </button>
+        </header>
+
+        <main class="main">
+            <section class="signup_section">
+                <h2>회원가입</h2>
+
+                <form action="">
+                    <fieldset>
+                        <legend class="sr-only">회원가입 정보 입력</legend>
+
+                        <div class="input_group">
+                            <label for="user_name">이름 <span class="required" aria-hidden="true">*</span></label>
+                            <input type="text" id="user_name" name="user_name" placeholder="이름을 입력해주세요.">
+                        </div>
+
+                        <div class="input_group">
+                            <label for="user_email">아이디(이메일) <span class="required" aria-hidden="true">*</span></label>
+                            <input type="email" id="user_email" name="user_email" placeholder="이메일을 입력해주세요.">
+                        </div>
+
+                        <div class="input_group">
+                            <label for="user_password">비밀번호 <span class="required" aria-hidden="true">*</span></label>
+                            <input type="password" id="user_password" name="user_password" placeholder="6자 이상의 비밀번호를 입력해주세요.">
+                        </div>
+
+                        <div class="input_group">
+                            <label for="user_password_confirm">비밀번호 확인 <span class="required" aria-hidden="true">*</span></label>
+                            <input type="password" id="user_password_confirm" name="user_password_confirm" placeholder="비밀번호를 한번 더 입력해주세요.">
+                        </div>
+
+                        <div class="verification_group">
+                            <p class="verification_title">휴대폰 인증 <span class="required" aria-hidden="true">*</span></p>
+                            <p class="verification_notice">
+                                <span class="notice_icon" aria-hidden="true">!</span>
+                                15세 이상 인증이 필요합니다.
+                            </p>
+                            <button type="button" class="verification_btn">본인인증</button>
+                        </div>
+
+                        <div class="agreement">
+                            <input type="checkbox" id="terms_agree" name="terms_agree">
+                            <label for="terms_agree">
+                                회원가입을 위한 개인정보 제공, 서비스 제공 이용방침 및 약관에 동의합니다.
+                                제공하신 정보는 개인식별, 서비스 제공 이외의 용도로 사용되지 않습니다
+                            </label>
+                        </div>
+
+                        <button type="submit" class="signup_btn" disabled>회원가입</button>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
